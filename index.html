@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;       background-color: #282559;
+        color: white;
+        font-size: 16px;
+        text-align: center;
+        line-height: 200px;
+        animation: move 1s infinite;
+      }
+      @keyframes move {
+        0% {
+          transform: translateX(0px);
+        }
+        50% {
+          transform: translateX(1000px);
+        }
+        100% {
+          transform: translateX(500px) rotate(360deg);
+        }
+      }
+
+      .star {
+        width: 0px;
+        height: 0px;
+        border-bottom: 70px solid #ad8c8c;
+        border-left: 100px solid transparent;
+        border-right: 100px solid transparent;
+        margin: 100px auto;
+        position: relative;
+        transform: rotate(35deg);
+        -webkit-transform: rotate(35deg);
+        -moz-transform: rotate(35deg);
+        -o-transform: rotate(35deg);
+        animation: move 1s infinite;
+      }
+      .star::before {
+        content: "";
+        width: 0px;
+        height: 0px;
+        border-bottom: 70px solid #64c749;
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        position: absolute;
+        top: -40px;
+        left: -60px;
+        transform: rotate(-35deg);
+        -webkit-transform: rotate(-35deg);
+        -moz-transform: rotate(-35deg);
+        -o-transform: rotate(-35deg);
+      }
+      .star::after {
+        content: "";
+        width: 0px;
+        height: 0px;
+        border-bottom: 70px solid #9f5d5d;
+        border-left: 100px solid transparent;
+        border-right: 100px solid transparent;
+        position: absolute;
+        top: 0px;
+        left: -100px;
+        transform: rotate(-70deg);
+        -webkit-transform: rotate(-70deg);
+        -moz-transform: rotate(-70deg);
+        -o-transform: rotate(-70deg);
+      }
+
+      .hello {
+        width: 200px;
+        height: 200px;
+        background-color: #44982d;
+        color: white;
+        font-size: 16px;
+        text-align: center;
+        line-height: 200px;
+        /* animation: move 1s infinite; */
+        margin: auto;
+      }
+      .ipt {
+        width: 200px;
+        height: 20px;
+        /* background-color: red; */
+        color: white;
+        font-size: 16px;
+        text-align: center;
+        line-height: 200px;
+        /* animation: move 1s infinite; */
+        margin: auto;
+        color: rgb(16, 190, 65);
+      }
+    </style>
+  </head>
+  <body>
+
+  </body>
+</html>
+
+<script>
+  for (let index = 0; index < 3; index++) {
+    // setInterval(() => {
+    //   document.write("你好");
+    // }, 2000);
+    let div = document.createElement("div");
+    // div.innerHTML = "你好";
+    // document.body.appendChild(div);
+    div.style.width = "100px";
+    div.style.height = "100px";
+    div.style.backgroundColor = "red";
+    div.style.color = "white";
+    div.style.fontSize = "16px";
+    div.style.textAlign = "center";
+    div.style.lineHeight = "100px";
+    div.style.animation = "move 3s infinite";
+    document.body.appendChild(div);
+    div.innerHTML = "你好1111";
+  }
+
+
+    for (let index = 0; index < 5; index++) {
+        // const element = array[index];
+         console.log('dvadvhjsa');
+    }
+
+     
+</script>
